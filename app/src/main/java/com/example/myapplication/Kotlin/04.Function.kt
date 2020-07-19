@@ -12,6 +12,22 @@ package com.example.myapplication.Kotlin
 // }
 
 fun plus(first : Int, second : Int) : Int{
+    println(first)
+    println(second)
     val result : Int = first + second
+    println(result)
     return  result
+}
+
+fun main(array : Array<String>){
+    //함수를 호출하는 방법
+    var result=plus(5,10)
+    println(result)
+    //인수를 명시적으로 전달하는 방법
+    var result2=plus(first=20,second=30)
+    println(result2)
+
+    var result3=plus(second=100,first=10)
+    println(result3)
+
 }
