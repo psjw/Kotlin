@@ -40,12 +40,19 @@ fun first(){
 //나머지 F
 fun second(score:Int):Char{
     var result:Char='F'
-    if(score>=80&&score<=90){
-        result='A'
-    }else if(score<=79&&score>=70){
-        result='B'
-    }else if(score<=69&&score>=60){
-        result='C'
+    when(score){
+        in 90..100 ->{
+            result='A'
+        }
+        in 80..89 ->{
+            result='B'
+        }
+        in 70..79->{
+            result='C'
+        }
+        else ->{
+            result='F'
+        }
     }
     return result;
 }
