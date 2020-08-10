@@ -78,7 +78,7 @@ fun third(inputNum:Int):Int{
 //구구단을 출력하자
 
 fun gugudan(){
-    for(i in 0 until 10){
+    for(i in 1 until 10){
         for(j in 1 until 10){
             println(i.toString()+" X "+j.toString()+"="+(i*j).toString())
         }
