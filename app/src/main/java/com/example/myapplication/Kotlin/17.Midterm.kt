@@ -80,7 +80,7 @@ fun third(inputNum:Int):Int{
 fun gugudan(){
     for(i in 1 until 10){
         for(j in 1 until 10){
-            println(i.toString()+" X "+j.toString()+"="+(i*j).toString())
+            println("$i X $j = ${i*j}")
         }
     }
 }
