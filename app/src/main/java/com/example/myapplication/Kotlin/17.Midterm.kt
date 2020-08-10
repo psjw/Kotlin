@@ -6,6 +6,7 @@ fun main(array: Array<String>) {
     println(second(10))
     println()
     println(third(89))
+    println()
     gugudan()
 }
 
@@ -54,7 +55,7 @@ fun second(score:Int):Char{
             result='F'
         }
     }
-    return result;
+    return result
 }
 
 
@@ -63,10 +64,12 @@ fun second(score:Int):Char{
 //전달 받은 숫자의 각 자리 숫자의 합을 구하자
 //조건 : 전달 받은 숫자는 무조건 두자리 숫자이다
 fun third(inputNum:Int):Int{
-    var result:Int=0;
-    var firstNum:Int= inputNum.toString().substring(0,1).toInt()
-    var secondNum:Int=inputNum.toString().substring(1,2).toInt()
-    result=firstNum+secondNum;
+    val a:Int=inputNum/10
+    val b:Int=inputNum%10
+    var result:Int=a+b;
+//    var firstNum:Int= inputNum.toString().substring(0,1).toInt()
+//    var secondNum:Int=inputNum.toString().substring(1,2).toInt()
+//    result=firstNum+secondNum;
     return result;
 }
 
