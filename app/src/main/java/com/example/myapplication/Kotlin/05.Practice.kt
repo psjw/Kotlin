@@ -1,41 +1,37 @@
 package com.example.myapplication.Kotlin
 
-import kotlin.math.min
-
-
-fun plusThree(first:Int, second:Int, third:Int):Int{
-    val result=first+second+third;
-    return result;
+fun plusThree(first: Int, second: Int, third: Int): Int {
+    return first + second + third
 }
 
-fun minusThree(first: Int,second: Int,third: Int)=first-second-third
+fun minusThree(first: Int, second: Int, third: Int) = first - second - third
 
-fun multiplyThree(first: Int=1,second: Int=1,third: Int=1):Int{
-    return first*second*third;
+fun mutiplyThree(first: Int = 1, second: Int = 1, third: Int = 1): Int {
+    return first * second * third
 }
 
-//내부함수
-// - 함수안에 함수가 있다!
-fun showMyPlus(first: Int,second: Int):Int{
+// 내부함수
+// - 함수 안에 함수가 있다!
+fun showMyPlust(first: Int, second: Int): Int {
     println(first)
     println(second)
-    //return first+second;
-    fun plus(first: Int,second: Int):Int{
-        return first+second
+//    return first+second
+    fun plus(first: Int, second: Int): Int {
+        return first + second
     }
-    return plus(first,second)
+    return plus(first, second)
 }
 
-fun main(array:Array<String>) {
-    val result= plusThree(1,2,3)
+fun main(args: Array<String>) {
+    val result = plusThree(1, 2, 3)
     println(result)
-    val result2= minusThree(10,1,2)
-    println(result)
-    val result3= multiplyThree(2,2,2)
+    val result2 = minusThree(10, 1, 2)
+    println(result2)
+    val result3 = mutiplyThree(2, 2, 2)
     println(result3)
-    var result4= multiplyThree()
+    val result4 = mutiplyThree()
     println(result4)
-    println()
-    val result5=showMyPlus(4,5)
+    val result5= showMyPlust(4,5)
     println(result5)
+
 }
